@@ -43,44 +43,44 @@ console.log(age >= 18 ? "You can smoke" : "You can't smoke");
 //! ********************** Switch-Case ***************************
 //!###############################################################
 
-const month = prompt("enter a month name")
+const month = prompt("enter a month name").toLowerCase().trim();
 let rdMonth 
 
 switch (month) {
-    case "January":
+    case "january":
         rdMonth = "first";
         break;
-    case "February":
+    case "february":
         rdMonth = "second";
         break;
-    case "March":
+    case "march":
         rdMonth = "third";
         break;
-    case "April":
+    case "april":
         rdMonth = "fourth"
         break;
-    case "May":
+    case "may":
         rdMonth = "fifth"
         break;
-    case "June":
+    case "june":
         rdMonth = "sixth"
         break;
-    case "July":
+    case "july":
         rdMonth = "seventh"
         break;
-    case "August":
+    case "august":
         rdMonth = "eighth"
         break;
-    case "September":
+    case "september":
         rdMonth = "ninth"
         break;
-    case "October":
+    case "october":
         rdMonth = "tenth"
         break;
-    case "November":
+    case "november":
         rdMonth = "eleventh"
         break;
-    case "December":
+    case "december":
         rdMonth = "twelfth"
         break;
 
