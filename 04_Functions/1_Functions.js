@@ -44,20 +44,20 @@ function division(num1,num2) {
     return num1 / num2   
 }
 
-// const number1 = +prompt("Write your first number");         //* Type Convertion
-// const operations = prompt("+,-,*,/ (choose one of them)");
-// const number2 = Number(prompt("Write your second number")); //* Type Convertion
-// let result;
+const number1 = +prompt("Write your first number");         //* Type Convertion
+const operations = prompt("+,-,*,/ (choose one of them)");
+const number2 = Number(prompt("Write your second number")); //* Type Convertion
+let result;
 
-// if (operations == "+") result = addition(number1,number2);
-// else if (operations == "-") result = subtraction(number1, number2);
-// else if (operations == "*") result = multiplication(number1, number2);
-// else if (operations == "/") {
-//   if (number2 == "0") alert("denominator can't be zero");
-//   else result = division(number1, number2);
-// } else alert("You selected the wrong operation");
+if (operations == "+") result = addition(number1,number2);
+else if (operations == "-") result = subtraction(number1, number2);
+else if (operations == "*") result = multiplication(number1, number2);
+else if (operations == "/") {
+  if (number2 == "0") alert("denominator can't be zero");
+  else result = division(number1, number2);
+} else alert("You selected the wrong operation");
 
-// console.log(number1 + operations + number2 + "=" + result);
+console.log(number1 + operations + number2 + "=" + result);
 //! #####################################################################
 //! #####################################################################
 
@@ -72,7 +72,8 @@ const evenOdd = function(number) {
 }
 console.log(evenOdd(16));
 
-
+//! #####################################################################
+//! #####################################################################
 
 
 //! #####################################################################
@@ -87,4 +88,7 @@ console.log(evenOdd(16));
 
 const oddEven=(num)=> num % 2 == 0 ? "even number" : "odd number" 
 console.log(oddEven(15));
+
+//! #####################################################################
+//! #####################################################################
 
