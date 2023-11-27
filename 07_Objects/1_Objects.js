@@ -104,18 +104,63 @@ people.forEach((item)=> console.log(item.name))
 //!Ozkul
 //!Baser
 
+
+
+//!##############################################################
 //! ornek1 : yaslari 1 arttir ve sonucu yeni bir diziye aktar.
 const newArray = people.map((x)=>(x.age+1))
 console.log(newArray);
 console.log(people[0].age);
 console.log(people[0]);
 
+//!##############################################################
 //! Ornek 2 : yaslari 1 er arttir, sonucu dizide kalici degistir. 
-
 people.map((item,i,array)=>{
     // console.log(item.age)   //! item da degisiklik yaparsan degisiklik olmaz. index ile degisiklik yapmalisin....
     array[i].age = array[i].age +1 
 })
 console.log(people);
 
+//!##############################################################
+//! Ornek 3 : 
+const yeniPeople = people.map((kisi) => ({
+  name1: kisi.name,
+  surname1: kisi.surname,
+  job1: kisi.job,
+  age1: kisi.age + 5,
+}));
 
+console.log(yeniPeople);
+console.log(people);
+
+//!##############################################################
+//! Ornek 4 : yasi 33 ün üstünde olan kisilerin namelerini listele.
+
+people.filter((x)=> x.age > 33 ).forEach((person)=>console.log(person.name))
+
+//!##############################################################
+//! Ornek 5 : her elemanin name ini büyük harfle yaz, yaslarini 2 kat yap , job larinin önüne senior kelimesi ekle. ve yeni bir diziye at...
+
+const newPeople = people.map((item)=>({
+  vorName: item.name.toUpperCase(),
+  lastName : item.surname,
+  job : "Senior " + item.job,
+  age : item.age *2
+
+}))
+
+console.log(newPeople);
+
+//!##############################################################
+//! ornek 6 Developer olanlarin adlarini ve yaslarini yeni bir object olarak saklayiniz
+
+const myObj = people.filter((x)=>x.job == "developer").map((item)=>({
+  name : item.name,
+  age : item.age
+}))
+console.log(myObj);
+people.push(...myObj)
+console.log(people);
+
+
+console.log("hallo".replaceAll("l","x"));
