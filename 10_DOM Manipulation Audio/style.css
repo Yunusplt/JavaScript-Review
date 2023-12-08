@@ -1,0 +1,14 @@
+.image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+button{
+    width: 100px;
+}
+
+#textBox{
+    width: 300px;
+    
+}
