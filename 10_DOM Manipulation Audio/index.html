@@ -15,19 +15,22 @@
   <body>
     <h5>JS de Bootstrap'i ilkkez burada kullaniyoruz</h5>
     <ul>
-        <li>head elementi icerisinde link elementi ile cagiriyoruz</li>
-        <li>html de class="" icerisinde yaziyoruz. önermeler alabiliyoruz</li>
+      <li>head elementi icerisinde link elementi ile cagiriyoruz</li>
+      <li>html de class="" icerisinde yaziyoruz. önermeler alabiliyoruz</li>
     </ul>
-    <hr>
+    <hr />
     <div class="title-div">
-        <h1>SAMPLES</h1>
+      <h1>SAMPLES</h1>
     </div>
-    
 
     <main class="text-center p-4">
       <img class="image" src="./img/aslan1.jpeg" alt="aslan1" />
       <div class="mt-4">
-        <audio src="./img/retro-ringtone.mp3" controls style="display: none;"></audio>
+        <audio
+          src="./img/retro-ringtone.mp3"
+          controls
+          style="display: none"
+        ></audio>
 
         <button class="btn btn-danger">Call</button>
         <button class="btn btn-success">Connect</button>
@@ -36,14 +39,24 @@
 
       <div class="input-div mt-4">
         <label for="textBox">🔗</label>
-        <input type="text" id="textBox" placeholder="write anything"/>
+        <input type="text" id="textBox" placeholder="write anything" />
 
         <label for="checkBox">upperCase</label>
-        <input type="checkbox" id="checkBox"/>
+        <input type="checkbox" id="checkBox" />
       </div>
     </main>
-
-
+    <section class="border container d-flex justify-content-center p-2 w-25">
+      <div>
+        <ul class="list">
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>CSS</li>
+        </ul>
+        <input type="text" class="input-group-text mb-2" id="inputLang"/>
+        <button class="btn btn-success w-50" id="add">add</button>
+        <button class="btn btn-danger " id="del">delete</button>
+      </div>
+    </section>
 
     <script src="1_manipulation.js"></script>
   </body>
