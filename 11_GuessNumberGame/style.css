@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/* font family body icerisinde ki yazimina dikkat. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: salmon;
+    font-family: "Black Ops One";  
+}
+
+header{
+text-align: center;
+border-bottom: 7px solid white;
+height: 30vh;
+position: relative;
+
+}
+
+.again{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 5vh;
+    width: 10rem;
+    font-size: 30px;
+    cursor: pointer;
+    /* font-family: "Black Ops One"; */
+    font-family: inherit;
+}
+/*! font-family inherit miras aliyor... */
+.guessBox{
+    background-color: white;
+    display: inline-block;
+    height: 10vh;
+    width: 10rem;
+    font-size: 80px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    padding: 8px;
+
+}
+
+.firstDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.firstDiv h1{
+    font-size: 50px;
+}
+
+.left input{
+    height: 120px;
+    width: 200px;
+    display: block;
+    background-color: transparent;
+    border: 3px solid white;
+    font-size: 60px;
+    text-align: center;
+    font-family: inherit;
+
+}
+
+.left{
+    float: left;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+
+.check{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: inherit;
+    cursor: pointer;
+
+}
+
+.score{
+    margin-top: 60px;
+}
+.score::before{
+    content: "💯 ";
+}
+.topScore::before{
+    content: "🚀";
+}
+.right{
+    font-size: 30px;
+}
