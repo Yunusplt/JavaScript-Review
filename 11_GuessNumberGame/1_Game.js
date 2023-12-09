@@ -1,5 +1,5 @@
 // let rastgeleSayi = Math.ceil(Math.random() * 20);
-const randomNumber = Math.floor(Math.random() * 20) + 1; //! create a random number
+let randomNumber = Math.floor(Math.random() * 20) + 1; //! create a random number let ile yapmak önemli 
 const checkBut = document.querySelector(".check");
 const mesage = document.querySelector(".start");
 const guesBox = document.querySelector(".guessBox")
@@ -35,3 +35,36 @@ checkBut.onclick = () => {
     }
   }
 };
+//!#####################################################
+//!#####################################################
+//!#####################################################
+//!#####################################################
+//todo ENTER!!!! 
+document.querySelector("input").onkeydown=(key)=>{
+  key.keyCode === 13 && checkBut.click()
+}
+
+//! #####################################################
+//! #####################################################
+//! #####################################################
+//! #####################################################
+//!! BUTTON AGAIN
+
+document.querySelector(".again").onclick=()=>{
+  document.querySelector("body").style.backgroundColor = "#2d3436";
+  document.querySelector("input").value = ""
+  mesage.innerText = "2. Player"
+  randomNumber = Math.floor(Math.random() * 20) + 1;
+  score = 10
+  document.querySelector(".scoreS").textContent = score
+  
+  guesBox.innerHTML = "?"
+}
+
+//todo let score dersem yeni bir score olusur. 
+//todo again e bastigin zaman bir defalik 10 olur.
+//todo daha sonra eski score again block unun disindaki score gecerli olur. 
+
+//todo randomNumber const ile tanimlandigi icin onu burada göremiyorum...
+//todo yeni bir random üretemem if döngüleri yukarida cünkü.
+//todo o yüzden randomNumberi yukarida let ile tanimlamam lazim
