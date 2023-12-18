@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 145, 238);
+}
+
+main{
+    background-color: springgreen;
+    height: 70vh;
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px 5px purple;
+     
+}
+.inputSect {
+    display: flex; 
+    /*! buradaki display:flex onemli. inputu, button i, ve div i ayni satirda tutup. esnek olmalarini sagliyor. kuculunce alta dusmeyi engeliyor.  */
+    /*! bu en önemlisi kuculunce alta dusmeyi engelliyor. */
+    /*! flex-wrap: wrap;  bu da tam tersi alta dusuruyor. */
+    width: 80%;
+
+}
+
+div{
+    display: inline-block;
+    text-align: left;
+    font-size: x-large;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 2rem;
+    font-family: cursive;
+    /* box-shadow: 5px 5px 5px ;    Bu yanlis bu text e ait dive shadow uygular */
+    /* filter: drop-shadow(3px 5px 5px purple);  Bu bir yöntem  */
+    text-shadow: 3px 5px 5px purple;
+
+}
+
+input{
+    height: 3rem;
+    width: 65%;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: currentColor; */
+    /* border: dashed */
+    /* border: dotted */
+    /* border: double */
+    /* border: groove */
+    /* border: hidden */
+    /* border: inherit */
+    /* border: initial */
+    /* border: inset */
+    /* border: medium */
+    /* border: none */
+    /* border: outset */
+    border: ridge
+    /* border: transparent */
+    /* border: thin */
+    /* border: thick */
+
+}
+
+button{
+    height: 3rem;
+    width: 10%;
+    border-radius: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 3px outset ;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.listSect{
+    width: 80%;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+li{
+    list-style: none;
+    height: 2rem;
+    padding-left: 5px;
+    padding-top: 5px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+    /*! sadece 1 icon da ise yarar-- yada iki ikonu bir div icerisinde konumlandirmak gerekir. */
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    /*! bu yapi cok guzel tek icona tek auto yaz. cift icona cift auto yaz... */
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+ul{
+    text-align:left;
+}
+
+ul li:nth-child(odd){
+    background-color: #dde6f5;
+}
+
+.completed{
+    min-width:108px;
+}
+
+
+@media screen and (max-width: 960px){
+    .inputSect{
+        flex-wrap: wrap;
+    }
+    button{
+        width: 20%;
+    }
+    input{
+        width: 78%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
