@@ -91,23 +91,40 @@ button{
     background-color: white;
     margin-top: 2rem;
 }
-
-li{
+/*!############################################################ */
+/*!############################################################ */
+/*! target 2. way ########################################### */
+/*! test adinda mevcut bir className var ve onunla style yapilmis */
+/*! buna zarar vermemek icin ikinci bir className olusturmaliyiz. */
+/*! bunun icin classList e ihtiyacimiz var. */
+.test{
     list-style: none;
     height: 2rem;
     padding-left: 5px;
     padding-top: 5px;
+    /*! sadece 1 icon da ise yarar-- yada iki ikonu bir div icerisinde konumlandirmak gerekir. */
     /* display: flex;
     align-items: center;
     justify-content: space-between;*/
-    /*! sadece 1 icon da ise yarar-- yada iki ikonu bir div icerisinde konumlandirmak gerekir. */
-    display: grid;
-    grid-template-columns: 1fr auto auto;
     /*! bu yapi cok guzel tek icona tek auto yaz. cift icona cift auto yaz... */
+    /* display: grid; */
+    /* grid-template-columns: 1fr auto auto; */
+    display: flex;
     font-weight: bolder;
     font-size: 18px;
+
+}
+p{
+    /*! bunu kullanamk istiyorsam parentElement display:flex olmak zorunda. böyle yapinca parentElement icerisindeki diger iki icon cürmü kadar yer kaplasin. p elementi kalan tüm boslugu kaplasin demis olduk... */
+    flex: 1;
 }
 
+.checked p{
+    text-decoration: line-through;
+}
+/*!############################################################ */
+/*!############################################################ */
+/*!############################################################ */
 
 ul{
     text-align:left;
@@ -137,3 +154,15 @@ ul li:nth-child(odd){
     }
 }
 
+#del{
+    cursor: pointer;
+}
+#del:hover{
+    transform: scale(1.2);
+}
+#check{
+    cursor: pointer;
+}
+#check:hover{
+    transform: scale(1.2);
+}
